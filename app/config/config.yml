@@ -131,6 +131,10 @@ fos_user:
         address: noreply@dhil.lib.sfu.ca
         sender_name: Do not reply
 
+nines_blog:
+    default_status: draft
+    default_category: none
+
 nines_feedback:
     default_status: submitted
     public_status: published

@@ -26,11 +26,16 @@
                     <a class="navbar-brand" href="{{ path('homepage') }}">Material Culture</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
+                    {{ knp_menu_render('pages') }}
+                    {{ knp_menu_render('posts') }}
+
                     {{ knp_menu_render('main') }}
-                    {{ knp_menu_render('user') }}
+
                     {% if is_granted('ROLE_COMMENT_ADMIN') %}
                         {{ knp_menu_render('feedback') }}
                     {% endif %}
+
+                    {{ knp_menu_render('user') }}
                 </div>
             </div>
         </nav>
